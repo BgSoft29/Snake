@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #E3F2FD;
+}
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0;
+    background: #293447;
+    border-radius: 5px;
+}
+.game-details {
+    color: #B8C5DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background:  #212837;
+}
+.play-board .food {
+    background: red;
+}
+.play-board .head {
+    background: green;
+}
+.containerControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls {
+    margin: 40px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div {
+    padding: 25px 0;
+    color: #B8C6DC;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    position: absolute;
+    background-color: rgb(105, 105, 149);
+    padding: 10px;
+    border-radius: 50%;
+}
+.up {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.down {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
